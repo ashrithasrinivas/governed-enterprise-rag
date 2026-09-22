@@ -28,6 +28,20 @@ The prototype includes a Tableau dashboard for monitoring governance controls, g
 
 The dashboard intentionally separates governance-control success from retrieval quality. In the six-case prototype, all applicable automated governance checks passed after remediation, while the average relevant chunk rate was 55%, highlighting an opportunity to improve retrieval precision.
 
+## What I Built
+
+I implemented the prototype end to end using Python and local AI tooling:
+
+- Created a fictional enterprise policy corpus with current, historical, and restricted documents
+- Built a governance catalog containing ownership, classification, version, status, effective-date, and access metadata
+- Extracted and chunked policy documents while preserving governance metadata
+- Generated embeddings and stored governed chunks in ChromaDB
+- Implemented access, status, version, and temporal filtering before LLM generation
+- Added deterministic controls for unsupported questions and source attribution
+- Built a reusable RAG workflow using Ollama for local LLM inference
+- Created a six-case regression test suite covering retrieval and governance behavior
+- Analyzed evaluation results and built a Tableau governance and quality dashboard
+
 ## Business Problem
 
 Enterprise RAG applications may retrieve information from multiple documents, versions, and data sources. Without appropriate governance controls, a system could:
