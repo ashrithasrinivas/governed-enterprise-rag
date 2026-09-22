@@ -20,6 +20,13 @@ The prototype demonstrates controls for:
 - Deterministic source attribution
 - Retrieval and response quality evaluation
 
+## Governance & Quality Dashboard
+
+The prototype includes a Tableau dashboard for monitoring governance controls, groundedness, and retrieval quality across the regression test set.
+
+![RAG Governance & Quality Dashboard](assets/rag-governance-dashboard.png)
+
+The dashboard intentionally separates governance-control success from retrieval quality. In the six-case prototype, all applicable automated governance checks passed after remediation, while the average relevant chunk rate was 55%, highlighting an opportunity to improve retrieval precision.
 
 ## Business Problem
 
