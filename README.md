@@ -224,18 +224,36 @@ This demonstrates why semantic similarity alone is insufficient for governed ent
 
 The RAG workflow runs locally for this prototype. Ollama is used for local language-model inference, while ChromaDB provides persistent vector storage.
 
-
 ## Project Structure
 
 rag-governance-project/
 
-- data/policies/ — fictional enterprise policy documents
-- governance/ — document catalog and governance rules
-- src/ — ingestion, chunking, retrieval, vector-store, RAG, and validation logic
-- evaluation/ — regression test set, evaluation script, and evaluation results
-- outputs/ — persistent Chroma vector database
-- README.md — project documentation
+- `data/policies/` — fictional enterprise policy documents
+- `governance/` — document catalog and governance rules
+- `src/` — ingestion, chunking, vector-store, RAG, and validation logic
+- `evaluation/` — regression test set, evaluation script, and evaluation results
+- `learning/` — incremental scripts used while learning and developing the RAG workflow
+- `assets/` — portfolio images and dashboard screenshot
+- `outputs/` — locally generated Chroma vector database (not committed)
+- `PROJECT_NOTES.md` — detailed project study and interview-review notes
+- `README.md` — portfolio documentation
 
+
+## What Testing Revealed
+
+Regression testing exposed governance issues that were not obvious from testing retrieval alone.
+
+One scenario showed that blocking access to a restricted Health Insurance Policy was not sufficient. Semantic retrieval could still return a different benefits-related document and allow the system to answer from the wrong source. I added requested-policy validation so that when a user explicitly asks about a known policy, the expected authorized policy must be present in the governed retrieval results before generation proceeds.
+
+Testing also showed that allowing the LLM to generate its own source information could produce unreliable provenance details. Source attribution was therefore moved out of the LLM prompt and generated programmatically from retrieved governance metadata.
+
+These findings reinforced a core design principle used in the prototype:
+
+**Use the LLM for language generation; use deterministic application logic and governed metadata for controls that require consistent enforcement.**
+
+The development cycle followed:
+
+**Detect → Diagnose → Remediate → Regression Test**
 
 ## Limitations and Future Improvements
 
