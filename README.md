@@ -2,23 +2,23 @@
 
 ## Project Overview
 
-This project is a hands-on prototype demonstrating how enterprise data governance principles can be applied to a Retrieval-Augmented Generation (RAG) application.
+This hands-on prototype explores how enterprise data governance principles can be applied to a Retrieval-Augmented Generation (RAG) application.
 
-The prototype uses fictional Acme Financial Services policy documents to simulate an enterprise policy assistant. Users can ask questions about policies such as PTO, remote work, benefits, and travel.
+Using fictional Acme Financial Services policy documents, I built a local RAG workflow that combines semantic retrieval with governance controls for metadata, document ownership, policy versioning, effective dates, access control, source attribution, and evaluation.
 
-The focus of the project is not only generating answers, but ensuring that the data used by the RAG system is governed throughout the lifecycle.
+The project focuses on a key enterprise AI question:
 
-The prototype demonstrates controls for:
+**How do we ensure an LLM receives information that is authoritative, current, permitted, traceable, and appropriate for the user's question?**
 
-- Document ownership and metadata
-- Policy versioning and effective dates
+Key capabilities demonstrated:
+
+- Governed document ingestion and metadata preservation
 - Current vs. historical policy retrieval
-- Data classification and access control
-- Source-to-answer lineage
+- Policy version and effective-date controls
+- Access filtering before LLM generation
 - Unsupported-question handling
-- Grounded answer generation
 - Deterministic source attribution
-- Retrieval and response quality evaluation
+- Retrieval, groundedness, and answer-quality evaluation
 
 ## Governance & Quality Dashboard
 
