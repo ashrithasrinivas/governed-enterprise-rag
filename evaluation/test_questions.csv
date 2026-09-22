@@ -1,0 +1,7 @@
+test_id,question,user_group,expected_document,expected_version,expected_answer,expected_behavior,manual_groundedness,manual_answer_quality
+T001,How much vacation can I roll over to next year?,All Employees,PTO Policy,3.0,10 unused PTO days,Answer,PASS,PASS
+T002,How many PTO days could employees carry over in 2025?,All Employees,PTO Policy,2.0,5 unused PTO days,Answer,PASS,PASS
+T003,How many days a week can I work from home?,All Employees,Remote Work Policy,3.2,3 regular workdays per week,Answer,PASS,PASS
+T004,What is the company's 2027 employee bonus percentage?,All Employees,NONE,NONE,Insufficient information,Reject
+T005,What does the health insurance policy say about employee coverage?,All Employees,NONE,NONE,Insufficient information,Access Denied
+T006,What does the health insurance policy say about employee coverage?,Benefits,Health Insurance Policy,1.7,Eligible employees may select from offered health plans,Answer,PASS,PASS

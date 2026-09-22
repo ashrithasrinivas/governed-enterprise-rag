@@ -1,0 +1,11 @@
+file_name,document_id,document_name,business_owner,classification,version,status,effective_date,expiration_date,review_date,source_system,access_group
+PTO_Policy_v3.pdf,HR-PTO-001,PTO Policy,Human Resources,Internal,3.0,Approved,2026-01-01,,2027-01-01,HR Policy Repository,All Employees
+PTO_Policy_v2.pdf,HR-PTO-001,PTO Policy,Human Resources,Internal,2.0,Retired,2025-01-01,2025-12-31,,HR Policy Repository,All Employees
+Parental_Leave_Policy.pdf,HR-LEAVE-002,Parental Leave Policy,Human Resources,Internal,2.1,Approved,2026-03-01,,2027-03-01,HR Policy Repository,All Employees
+Holiday_Policy.pdf,HR-HOL-003,Company Holiday Policy,Human Resources,Internal,1.4,Approved,2026-01-01,,2026-10-01,HR Policy Repository,All Employees
+Remote_Work_Policy.pdf,HR-REMOTE-004,Remote Work Policy,Human Resources,Internal,3.2,Approved,2026-08-01,,2027-08-01,HR Policy Repository,All Employees
+Benefits_Eligibility.pdf,HR-BEN-005,Benefits Eligibility Guide,Total Rewards,Internal,2.0,Approved,2026-01-01,,2027-01-01,Benefits Repository,All Employees
+Health_Insurance_Policy.pdf,HR-HLTH-006,Health Insurance Policy,Total Rewards,Confidential - Employee Benefits,1.7,Approved,2026-01-01,,2027-01-01,Benefits Repository,Benefits
+Travel_Expense_Policy.pdf,FIN-TVL-007,Travel & Expense Policy,Finance,Internal,4.0,Approved,2026-07-01,,2027-07-01,Finance Policy Repository,All Employees
+Business_Travel_Policy.pdf,FIN-TRV-008,Business Travel Policy,Finance & Corporate Security,Internal,2.3,Approved,2026-06-15,,2027-06-15,Finance Policy Repository,All Employees
+Employee_Handbook.pdf,HR-HBK-009,Employee Handbook,Human Resources,Internal,5.0,Approved,2026-01-01,,2027-01-01,HR Policy Repository,All Employees

@@ -1,0 +1,345 @@
+test_id,question,user_group,expected_document,expected_version,expected_behavior,expected_answer,generated_answer,retrieved_documents,retrieved_context,retrieved_versions,document_pass,relevant_chunk_rate,manual_groundedness,manual_answer_quality,version_pass,access_control_pass,rejection_pass,response_behavior_pass
+T001,How much vacation can I roll over to next year?,All Employees,PTO Policy,3.0,Answer,10 unused PTO days,"You can roll over up to 10 unused PTO days from one calendar year into the next.
+
+Source: PTO Policy, Version 3.0",PTO Policy | PTO Policy | Company Holiday Policy | Company Holiday Policy | Business Travel Policy,"employment status and applicable law.
+3. PTO Accrual
+Eligible employees accrue PTO each pay period according to their employment tenure and applicable plan. The
+employee self-service system is the system of record for an employee's available balance.
+4. PTO Carryover
+Employees may carry over up to 10 unused PTO days from one calendar year into the next. Any unused
+balance above the permitted carryover limit is forfeited unless a legal or company-approved exception applies.
+5. Requesting PTO
+Employees should submit PTO requests through the employee self-service system at least five business days
+
+--- CHUNK ---
+
+before planned time off when practicable. Manager approval is required before planned PTO is taken.
+6. Holidays and Leave
+Company holidays and approved statutory or protected leave are administered separately from PTO and are
+not deducted from an employee's PTO balance.
+
+--- CHUNK ---
+
+ACME FINANCIAL SERVICES — FICTIONAL TRAINING DATA
+Page 1
+ Company Holiday Policy
+Fictional document created for RAG/data-governance training. Not a real company policy.
+Document ID
+HR-HOL-003
+Owner
+Human Resources
+Classification
+Internal
+Version
+1.4
+Status
+Approved
+Effective Date
+January 1, 2026
+Review Date
+October 1, 2026
+1. Annual Holidays
+Acme Financial Services observes 12 company holidays during the 2026 calendar year. The published annual
+holiday calendar is maintained by Human Resources.
+2. Eligibility
+Holiday eligibility depends on employment status and applicable work schedules.
+3. Holiday During PTO
+
+--- CHUNK ---
+
+3. Holiday During PTO
+When a company holiday occurs during approved PTO, the holiday is generally not deducted from the
+employee's PTO balance.
+4. Schedule Changes
+Business units may designate alternate work schedules when operational needs require coverage. Employees
+should follow their approved work schedule and manager instructions.
+
+--- CHUNK ---
+
+ACME FINANCIAL SERVICES — FICTIONAL TRAINING DATA
+Page 1
+ Business Travel Policy
+Fictional document created for RAG/data-governance training. Not a real company policy.
+Document ID
+FIN-TRV-008
+Owner
+Finance & Corporate Security
+Classification
+Internal
+Version
+2.3
+Status
+Approved
+Effective Date
+June 15, 2026
+Review Date
+June 15, 2027
+1. Travel Authorization
+Business travel must be approved before booking when the trip meets the company's travel-approval
+requirements.
+2. Air Travel
+Employees should select reasonable economy-class airfare for standard business travel. Exceptions for
+premium cabins require documented approval under the travel approval process.
+3. Lodging",3.0 | 3.0 | 1.4 | 1.4 | 2.3,PASS,40.0,PASS,PASS,PASS,N/A,N/A,N/A
+T002,How many PTO days could employees carry over in 2025?,All Employees,PTO Policy,2.0,Answer,5 unused PTO days,"According to the policy, employees could carry over up to 5 unused PTO days into the following calendar year in 2025.
+
+Source: PTO Policy, Version 2.0",PTO Policy | PTO Policy,"ACME FINANCIAL SERVICES — FICTIONAL TRAINING DATA
+Page 1
+ PTO Policy — Version 2
+Fictional document created for RAG/data-governance training. Not a real company policy.
+Document ID
+HR-PTO-001
+Owner
+Human Resources
+Classification
+Internal
+Version
+2.0
+Status
+Retired
+Effective Date
+January 1, 2025
+Expiration Date
+December 31, 2025
+1. Purpose
+This policy defined paid time off (PTO) eligibility, accrual, use, and carryover requirements for Acme Financial
+Services employees during the 2025 plan year.
+2. PTO Carryover
+Under Version 2, employees could carry over up to 5 unused PTO days into the following calendar year.
+3. Status
+
+--- CHUNK ---
+
+3. Status
+This document was retired effective December 31, 2025. Version 3 is the current approved policy and
+supersedes this version for current employee entitlements.",2.0 | 2.0,PASS,100.0,PASS,PASS,PASS,N/A,N/A,N/A
+T003,How many days a week can I work from home?,All Employees,Remote Work Policy,3.2,Answer,3 regular workdays per week,"According to the Remote Work Policy (Version 3.2), eligible employees may work remotely up to 3 regular workdays per week, unless their approved role arrangement specifies a different schedule.
+
+Source: Remote Work Policy, Version 3.2",Remote Work Policy | PTO Policy | Remote Work Policy | Employee Handbook | Company Holiday Policy,"ACME FINANCIAL SERVICES — FICTIONAL TRAINING DATA
+Page 1
+ Remote Work Policy
+Fictional document created for RAG/data-governance training. Not a real company policy.
+Document ID
+HR-REMOTE-004
+Owner
+Human Resources
+Classification
+Internal
+Version
+3.2
+Status
+Approved
+Effective Date
+August 1, 2026
+Review Date
+August 1, 2027
+1. Purpose
+This policy establishes requirements for employees approved to work remotely or in a hybrid arrangement.
+2. Hybrid Schedule
+Eligible employees may work remotely up to 3 regular workdays per week unless their approved role
+arrangement specifies a different schedule.
+3. Approval
+
+--- CHUNK ---
+
+employment status and applicable law.
+3. PTO Accrual
+Eligible employees accrue PTO each pay period according to their employment tenure and applicable plan. The
+employee self-service system is the system of record for an employee's available balance.
+4. PTO Carryover
+Employees may carry over up to 10 unused PTO days from one calendar year into the next. Any unused
+balance above the permitted carryover limit is forfeited unless a legal or company-approved exception applies.
+5. Requesting PTO
+Employees should submit PTO requests through the employee self-service system at least five business days
+
+--- CHUNK ---
+
+arrangement specifies a different schedule.
+3. Approval
+Remote work arrangements require manager approval and must be consistent with business, security, tax, and
+regulatory requirements.
+4. Security
+Employees working remotely must use company-approved devices, authentication methods, and secure
+network connections. Confidential information must not be accessed from unauthorized locations or devices.
+5. Changes
+The company may modify remote-work arrangements based on business requirements, role responsibilities, or
+changes in applicable law.
+
+--- CHUNK ---
+
+information, and report concerns through approved channels.
+3. Information Security
+Employees must protect company credentials, use approved systems, and report suspected security incidents
+promptly.
+4. Workplace Flexibility
+Certain roles may qualify for approved remote or hybrid work arrangements. The Remote Work Policy provides
+the detailed requirements.
+5. Time Off
+The PTO Policy, Holiday Policy, and Parental Leave Policy provide the detailed requirements for different forms
+of time away from work.
+6. Questions and Escalation
+Employees should contact Human Resources, their manager, or the designated policy owner when they need
+
+--- CHUNK ---
+
+ACME FINANCIAL SERVICES — FICTIONAL TRAINING DATA
+Page 1
+ Company Holiday Policy
+Fictional document created for RAG/data-governance training. Not a real company policy.
+Document ID
+HR-HOL-003
+Owner
+Human Resources
+Classification
+Internal
+Version
+1.4
+Status
+Approved
+Effective Date
+January 1, 2026
+Review Date
+October 1, 2026
+1. Annual Holidays
+Acme Financial Services observes 12 company holidays during the 2026 calendar year. The published annual
+holiday calendar is maintained by Human Resources.
+2. Eligibility
+Holiday eligibility depends on employment status and applicable work schedules.
+3. Holiday During PTO",3.2 | 3.0 | 3.2 | 5.0 | 1.4,PASS,40.0,PASS,PASS,PASS,N/A,N/A,N/A
+T004,What is the company's 2027 employee bonus percentage?,All Employees,NONE,NONE,Reject,Insufficient information,The available policy documents do not contain enough information to answer this question.,,,,N/A,,,,N/A,N/A,PASS,N/A
+T005,What does the health insurance policy say about employee coverage?,All Employees,NONE,NONE,Access Denied,Insufficient information,The available policy documents do not contain enough information to answer this question.,Employee Handbook | Benefits Eligibility Guide | Employee Handbook | Benefits Eligibility Guide | PTO Policy,"clarification. The most specific current approved policy governs when this handbook provides only a general
+summary.
+
+--- CHUNK ---
+
+enrollment period.
+3. Enrollment
+Employees must complete enrollment within the applicable enrollment window. Failure to enroll may result in
+delayed coverage.
+4. Plan Documents
+The official benefit plan documents and carrier terms govern coverage. This guide is a summary and does not
+replace the plan documents.
+5. Ownership
+Total Rewards owns this guide and coordinates updates with benefit plan administrators.
+
+--- CHUNK ---
+
+information, and report concerns through approved channels.
+3. Information Security
+Employees must protect company credentials, use approved systems, and report suspected security incidents
+promptly.
+4. Workplace Flexibility
+Certain roles may qualify for approved remote or hybrid work arrangements. The Remote Work Policy provides
+the detailed requirements.
+5. Time Off
+The PTO Policy, Holiday Policy, and Parental Leave Policy provide the detailed requirements for different forms
+of time away from work.
+6. Questions and Escalation
+Employees should contact Human Resources, their manager, or the designated policy owner when they need
+
+--- CHUNK ---
+
+ACME FINANCIAL SERVICES — FICTIONAL TRAINING DATA
+Page 1
+ Benefits Eligibility Guide
+Fictional document created for RAG/data-governance training. Not a real company policy.
+Document ID
+HR-BEN-005
+Owner
+Total Rewards
+Classification
+Internal
+Version
+2.0
+Status
+Approved
+Effective Date
+January 1, 2026
+Review Date
+January 1, 2027
+1. Medical and Dental
+Regular full-time employees generally become eligible for company benefits on the first day of the month
+following 30 days of employment, subject to plan terms.
+2. Dependents
+Eligible employees may enroll qualified dependents during initial enrollment, qualifying life events, or the annual
+enrollment period.
+3. Enrollment
+
+--- CHUNK ---
+
+ACME FINANCIAL SERVICES — FICTIONAL TRAINING DATA
+Page 2
+7. Policy Administration
+Human Resources owns this policy. The current approved version supersedes prior versions. Retired versions
+are retained for historical reference and should not be used to determine current employee entitlements.",5.0 | 2.0 | 5.0 | 2.0 | 3.0,N/A,,,,N/A,PASS,N/A,PASS
+T006,What does the health insurance policy say about employee coverage?,Benefits,Health Insurance Policy,1.7,Answer,Eligible employees may select from offered health plans,"Eligible employees may select from the health plans offered for the applicable plan year. Coverage and cost-sharing vary by plan.
+
+Source: Health Insurance Policy, Version 1.7",Health Insurance Policy | Employee Handbook | Benefits Eligibility Guide | Employee Handbook | Health Insurance Policy,"ACME FINANCIAL SERVICES — FICTIONAL TRAINING DATA
+Page 1
+ Health Insurance Policy
+Fictional document created for RAG/data-governance training. Not a real company policy.
+Document ID
+HR-HLTH-006
+Owner
+Total Rewards
+Classification
+Confidential - Employee Benefits
+Version
+1.7
+Status
+Approved
+Effective Date
+January 1, 2026
+Review Date
+January 1, 2027
+1. Coverage
+Eligible employees may select from the health plans offered for the applicable plan year. Coverage and
+cost-sharing vary by plan.
+2. Enrollment
+Employees generally enroll during their initial eligibility window or annual open enrollment. Qualifying life events
+may create a special enrollment opportunity.
+3. Dependents
+
+--- CHUNK ---
+
+clarification. The most specific current approved policy governs when this handbook provides only a general
+summary.
+
+--- CHUNK ---
+
+enrollment period.
+3. Enrollment
+Employees must complete enrollment within the applicable enrollment window. Failure to enroll may result in
+delayed coverage.
+4. Plan Documents
+The official benefit plan documents and carrier terms govern coverage. This guide is a summary and does not
+replace the plan documents.
+5. Ownership
+Total Rewards owns this guide and coordinates updates with benefit plan administrators.
+
+--- CHUNK ---
+
+information, and report concerns through approved channels.
+3. Information Security
+Employees must protect company credentials, use approved systems, and report suspected security incidents
+promptly.
+4. Workplace Flexibility
+Certain roles may qualify for approved remote or hybrid work arrangements. The Remote Work Policy provides
+the detailed requirements.
+5. Time Off
+The PTO Policy, Holiday Policy, and Parental Leave Policy provide the detailed requirements for different forms
+of time away from work.
+6. Questions and Escalation
+Employees should contact Human Resources, their manager, or the designated policy owner when they need
+
+--- CHUNK ---
+
+may create a special enrollment opportunity.
+3. Dependents
+Eligible dependents may include a spouse and qualifying children, subject to plan rules and documentation
+requirements.
+4. Privacy
+Personal health information must be handled according to applicable privacy requirements. This policy does not
+authorize access to individual medical records.
+5. Plan Authority
+Carrier contracts and official plan documents control in the event of a conflict with this summary.",1.7 | 5.0 | 2.0 | 5.0 | 1.7,PASS,40.0,PASS,PASS,PASS,N/A,N/A,N/A
